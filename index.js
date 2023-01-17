@@ -32,8 +32,8 @@ app.post('/chat', async(req,res)=> {
         const response = await openai.createCompletion({
             model: "text-davinci-003",
             prompt: req.body.prompt,
-            temperature: 0.9,
-            max_tokens: 150,
+            temperature: 0.4,
+            max_tokens: 2400,
             top_p: 1,
             frequency_penalty: 0,
             presence_penalty: 0.6,
